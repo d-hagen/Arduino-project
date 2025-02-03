@@ -6,7 +6,7 @@
 U8G2_SH1107_128X128_1_HW_I2C u8g2(U8G2_R0); // Hardware I2C, no rotation
 
 // Define walls as tuples of start and end points
-const int num_walls = 13; // Adjust based on number of walls
+const int num_walls = 14; // Adjust based on number of walls
 const int walls[num_walls][2][2] = {
     {{5, 5}, {120, 5}},   // Top horizontal wall
     {{5, 5}, {5, 120}},   // Left vertical wall
@@ -20,9 +20,7 @@ const int walls[num_walls][2][2] = {
     {{60, 30}, {5, 30}},
     {{60, 95}, {5, 95}},
     {{60, 115}, {60, 120}},
-    {{20, 110}, {20, 110}}
-
-
+    {{20, 100}, {20, 110}}
 };
 
 // Function to draw a straight line using Manhattan distance
